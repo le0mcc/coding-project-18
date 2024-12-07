@@ -1,7 +1,7 @@
 import ChartComponent from "./Chart";
 
-export const BarChart = ({ data }) => {
-    const barChartData = {
+export const LineChart = ({ data }) => {
+    const lineChartData = {
       labels: data.months,
       datasets: [
         {
@@ -13,12 +13,12 @@ export const BarChart = ({ data }) => {
         },
       ],
     };
-    const barChartOptions = {
+    const lineChartOptions = {
         scales: {
           y: {
             beginAtZero: true,
           },
         },
       };
-    return <ChartComponent type="bar" data={barChartData} options={barChartOptions} />;
+    return <ChartComponent type="line" data={lineChartData} options={lineChartOptions} />;
 };
