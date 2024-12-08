@@ -3,6 +3,8 @@ import './App.css'
 import React, { useEffect, useRef } from 'react';
 import { BarChart } from './components/BarChart';
 import { LineChart } from './components/LineChart';
+import { ScatterChart } from './components/ScatterChart';
+import { BubbleChart } from './components/BubbleChart';
 
 function App() {
   // Store fetched data dna initialize the state the null
@@ -22,14 +24,14 @@ function App() {
     // Render each chart component, passing chartData as the data prop
     <>
       <div style={{ textAlign: 'center' }}>
-        <h1>Dynamic Charts with React and Chart.js</h1>
+        <h1>Coding Challenge 18</h1>
         <BarChart data={chartData} />
         <LineChart data={chartData} />
+        <ScatterChart data={chartData} />
+        <BubbleChart data={chartData} />
       </div>
     </>
-    //ScatterChart data={chartData}
-    //BubbleChart data={chartData}
   )
-}
+};
 
-export default App
+export default App;

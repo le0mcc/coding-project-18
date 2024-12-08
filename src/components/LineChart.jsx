@@ -6,8 +6,8 @@ export const LineChart = ({ data }) => {
       labels: data.months, // x-axis labels based on months from the data prop
       datasets: [
         {
-          label: 'Monthly Sales',
-          data: data.sales, // y-axis values based on the sales from the data prop
+          label: 'Monthly Profits',
+          data: data.profits, // y-axis values based on the sales from the data prop
           backgroundColor: 'rgba(75, 192, 192, 0.2)', // styles the chart's lines
           borderColor: 'rgba(75, 192, 192, 1)',
           borderWidth: 1,
