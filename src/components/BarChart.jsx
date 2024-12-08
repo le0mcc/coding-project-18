@@ -8,8 +8,8 @@ export const BarChart = ({ data }) => {
         {
           label: 'Monthly Sales',
           data: data.sales, // y-axis values based on the sales from the data prop
-          backgroundColor: 'rgba(75, 192, 192, 0.2)', // styles the chart's bars
-          borderColor: 'rgba(75, 192, 192, 1)',
+          backgroundColor: 'rgba(255, 135, 0, 0.2)', // styles the chart
+          borderColor: 'rgba(255, 135, 0, 1)',
           borderWidth: 1,
         },
       ],

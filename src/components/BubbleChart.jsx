@@ -13,16 +13,26 @@ export const BubbleChart = ({ data }) => {
         {
           label: 'Profits',
           data: newArray, // y-axis values based on the sales from the data prop
-          backgroundColor: 'rgba(75, 192, 192, 0.2)', // styles the chart
-          borderColor: 'rgba(75, 192, 192, 1)',
+          backgroundColor: 'rgba(255, 135, 0, 0.2)', // styles the chart
+          borderColor: 'rgba(255, 135, 0, 1)',
           borderWidth: 1,
         },
       ],
     };
     const bubbleChartOptions = {
         scales: { //configures the chart axes
-          y: {
-            beginAtZero: false, // fits the y axis to the graph
+            x: {
+                title: {
+                    display: true,
+                    text: 'Sales'
+                },
+            },
+            y: {
+                title: {
+                    display: true,
+                    text: 'Expenses'
+                },
+                beginAtZero: false, // fits the y axis to the graph
           },
         },
       };

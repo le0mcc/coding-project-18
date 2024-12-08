@@ -13,8 +13,8 @@ export const ScatterChart = ({ data }) => {
         {
           label: 'Expenses vs. Profits',
           data: newArray, // y-axis values based on the sales from the data prop
-          backgroundColor: 'rgba(75, 192, 192, 0.2)', // styles the chart
-          borderColor: 'rgba(75, 192, 192, 1)',
+          backgroundColor: 'rgba(255, 135, 0, 0.2)', // styles the chart
+          borderColor: 'rgba(255, 135, 0, 1)',
           borderWidth: 1,
         },
       ],
@@ -22,8 +22,18 @@ export const ScatterChart = ({ data }) => {
     const scatterChartOptions = {
         scales: { //configures the chart axes
             x: {
+                title: {
+                    display: true,
+                    text: 'Expenses'
+                },
                 type: 'linear',
                 position: 'bottom'
+            },
+            y: {
+                title: {
+                    display: true,
+                    text: 'Profits'
+                }
             }
         },
       };
